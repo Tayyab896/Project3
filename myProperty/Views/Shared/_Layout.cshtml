@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - Real Estate Auction</title>
+    <link rel="stylesheet" href="~/Content/Site.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                <li><a href="@Url.Action("About", "Home")">About Us</a></li>
+                <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
+                <a href="@Url.Action("Index", "Users")">Users</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer>
+        <!-- You can add footer content here -->
+    </footer>
+
+    @RenderSection("Scripts", required: false)  <!-- This line ensures scripts section is rendered if defined in any view -->
+</body>
+</html>
+

@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - Real Estate Auction</title>
+    <link rel="stylesheet" href="~/Content/site.css" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+
+                <a href="/Auction" class="cta-btn">Browse Auction</a>
+                <a href="/Property" class="cta-btn">Browse Property</a>
+                <a href="/Bid" class="cta-btn">Browse Bid</a>
+                <a href="/AuctionReport" class="cta-btn">Browse AuctionReport</a>
+                <a href="@Url.Action("Index", "Users")">Users</a>
+
+                <a href="/Log In" class="cta-btn">Log In</a>
+
+
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Welcome to the Estate Agency</h1>
+
+        <!-- Group Details Table -->
+        <section class="group-details">
+            <h2>Group Members</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Student ID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tayyab Ali</td>
+                        <td>20006949</td>
+                    </tr>
+                    <tr>
+                        <td>Ghulam Mustafa</td>
+                        <td>20008440</td>
+                    </tr>
+                    <tr>
+                        <td>Muzaffar Ali</td>
+                        <td>20008770</td>
+                    </tr>
+                    <tr>
+                        <td>Aftab Ur Rehman</td>
+                        <td>20008424</td>
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Upcoming Auctions -->
+        <section class="upcoming-auctions">
+            <h2>Upcoming Auctions</h2>
+            <ul>
+                <li>
+                    <h3>Property 1: Beautiful Villa</h3>
+                    <p>Auction Date: 12th March 2025</p>
+                    <p>Current Bid: $500,000</p>
+                    <a href="/Auction/Details/1" class="cta-btn">View Auction</a>
+                </li>
+                <li>
+                    
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Real Estate Auction - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
